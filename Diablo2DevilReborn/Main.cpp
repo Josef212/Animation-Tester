@@ -25,6 +25,7 @@ App* app = NULL;
 
 int main(int argc, char* args[])
 {
+
 	LOG("Engine starting ... %d");
 
 	MainState state = MainState::CREATE;

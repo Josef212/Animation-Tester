@@ -30,8 +30,6 @@ public:
 
 	Entity* getEntity(uint id);
 
-	bool remove(uint _id);
-
 	Entity* createEntity(iPoint pos, const char* textureName);
 
 	std::map<entityDirection, Animation>* getAnim();

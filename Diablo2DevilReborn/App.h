@@ -11,7 +11,6 @@ class Window;
 class Input;
 class Render;
 class Textures;
-class Console;
 class EntityManager;
 class Map;
 class TestingScene;
@@ -83,7 +82,6 @@ public:
 	Input* input = NULL;
 	Render* render = NULL;
 	Textures* textures = NULL;
-	Console* console = NULL;
 	EntityManager* eManager = NULL;
 	Map* map = NULL;
 	TestingScene* tS = NULL;

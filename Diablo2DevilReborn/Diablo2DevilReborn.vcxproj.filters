@@ -37,9 +37,6 @@
     <ClCompile Include="Map.cpp">
       <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
     </ClCompile>
-    <ClCompile Include="Console.cpp">
-      <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
-    </ClCompile>
     <ClCompile Include="EntityManager.cpp">
       <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
     </ClCompile>
@@ -97,9 +94,6 @@
       <Filter>Desenvolupament  ========\Modules\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Map.h">
-      <Filter>Desenvolupament  ========\Modules\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Console.h">
       <Filter>Desenvolupament  ========\Modules\Headers</Filter>
     </ClInclude>
     <ClInclude Include="EntityManager.h">

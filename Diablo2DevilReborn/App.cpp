@@ -11,7 +11,6 @@
 #include "Input.h"
 #include "Render.h"
 #include "Textures.h"
-#include "Console.h"
 #include "Map.h"
 #include "EntityManager.h"
 
@@ -30,7 +29,6 @@ App::App(int argc, char* args[]) : argc(argc), args(args)
 	textures = new Textures();
 	
 	eManager = new EntityManager();
-	console = new Console();
 
 	tS = new TestingScene();
 
@@ -43,8 +41,6 @@ App::App(int argc, char* args[]) : argc(argc), args(args)
 	addModule(tS);
 	
 	addModule(eManager);
-
-	addModule(console);	
 
 	addModule(render); //Must be the last one
 	
