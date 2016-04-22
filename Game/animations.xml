@@ -1,0 +1,250 @@
+<!-- Animations -->
+<animations>
+	
+	<BARBARIAN>
+
+		<name value = "0" /> <!-- Barbarian -->
+
+		<IDLE> <!-- Idle -->
+			<name value = "0"  />
+			<UP> <!-- Up 0-->
+				<values name = "0" x ="53" y = "481" w = "72" h = "104" frameNumber = "8" margin = "" />
+			</UP>
+
+			<UP_RIGHT> <!-- UP_RIGHT 1-->
+				<values name = "1" x ="53" y = "598" w = "72" h = "104" frameNumber = "8" margin = "" />
+			</UP_RIGHT>
+
+			<RIGHT> <!-- RIGHT 2-->
+				<values name = "2" x ="53" y = "717" w = "72" h = "104" frameNumber = "8" margin = "" />
+			</RIGHT>
+
+			<DOWN_RIGHT> <!-- DOWN_RIGHT 3-->
+				<values name = "3" x ="53" y = "831" w = "72" h = "104" frameNumber = "8" margin = "" />
+			</DOWN_RIGHT>
+
+			<DOWN> <!-- DOWN 4-->
+				<values name = "4" x ="53 px" y = "17 px" w = "72 px" h = "104" frameNumber = "8" margin = "" />
+			</DOWN>
+
+			<DOWN_LEFT> <!-- DOWN_LEFT 5-->
+				<values name = "5" x ="53" y = "134" w = "72" h = "104" frameNumber = "8" margin = "" />
+			</DOWN_LEFT>
+
+			<LEFT> <!-- LEFT 6-->
+				<values name = "6" x ="53" y = "255" w = "72" h = "104" frameNumber = "8" margin = "" />
+			</LEFT>
+
+			<UP_LEFT> <!-- UP_LEFT 7-->
+				<values name = "7" x ="53" y = "370" w = "72" h = "104" frameNumber = "8" margin = "" />
+			</UP_LEFT>
+			
+			<loop value = "1" />
+
+		</IDLE>
+
+		<WALK> <!-- Walk 1-->
+
+			<name value = "1"  />
+			<UP> <!-- Up 0-->
+				<values name = "0" x ="53" y = "1412" w = "72" h = "104" frameNumber = "8" margin = "4" />
+			</UP>
+
+			<UP_RIGHT> <!-- UP_RIGHT 1-->
+				<values name = "1" x ="53" y = "1526" w = "72" h = "104" frameNumber = "8" margin = "4" />
+			</UP_RIGHT>
+
+			<RIGHT> <!-- RIGHT 2-->
+				<values name = "2" x ="53" y = "1647" w = "72" h = "104" frameNumber = "8" margin = "4" />
+			</RIGHT>
+
+			<DOWN_RIGHT> <!-- DOWN_RIGHT 3-->
+				<values name = "3" x ="53" y = "1763" w = "72" h = "104" frameNumber = "8" margin = "4" />
+			</DOWN_RIGHT>
+
+			<DOWN> <!-- DOWN 4-->
+				<values name = "4" x ="53" y = "950" w = "72" h = "104" frameNumber = "8" margin = "4" />
+			</DOWN>
+
+			<DOWN_LEFT> <!-- DOWN_LEFT 5-->
+				<values name = "5" x ="53" y = "1063" w = "72" h = "104" frameNumber = "8" margin = "4" />
+			</DOWN_LEFT>
+
+			<LEFT> <!-- LEFT 6-->
+				<values name = "6" x ="53" y = "1181" w = "72" h = "104" frameNumber = "8" margin = "4" />
+			</LEFT>
+
+			<UP_LEFT> <!-- UP_LEFT 7-->
+				<values name = "7" x ="53" y = "1297" w = "72" h = "104" frameNumber = "8" margin = "4" />
+			</UP_LEFT>
+
+			<loop value = "1" />
+
+		</WALK>
+
+		<BASIC_ATTACK> <!-- Basic attack 2-->
+
+			<name value = "2"  />
+			<UP> <!-- Up 0-->
+				<values name = "0" x ="15" y = "2449" w = "121" h = "150" frameNumber = "15" margin = "0" />
+			</UP>
+
+			<UP_RIGHT> <!-- UP_RIGHT 1-->
+				<values name = "1" x ="18" y = "2572" w = "113" h = "150" frameNumber = "15" margin = "1" />
+			</UP_RIGHT>
+
+			<RIGHT> <!-- RIGHT 2-->
+				<values name = "2" x ="10" y = "2709" w = "143" h = "150" frameNumber = "15" margin = "1" />
+			</RIGHT>
+
+			<DOWN_RIGHT> <!-- DOWN_RIGHT 3-->
+				<values name = "3" x ="23" y = "2850" w = "144" h = "150" frameNumber = "15" margin = "2" />
+			</DOWN_RIGHT>
+
+			<DOWN> <!-- DOWN 4-->
+				<values name = "4" x ="24" y = "1880" w = "134" h = "150" frameNumber = "15" margin = "1" />
+			</DOWN>
+
+			<DOWN_LEFT> <!-- DOWN_LEFT 5-->
+				<values name = "5" x ="23" y = "2032" w = "119" h = "150" frameNumber = "15" margin = "1" />
+			</DOWN_LEFT>
+
+			<LEFT> <!-- LEFT 6-->
+				<values name = "6" x ="22" y = "2179" w = "127" h = "150" frameNumber = "15" margin = "1" />
+			</LEFT>
+
+			<UP_LEFT> <!-- UP_LEFT 7-->
+				<values name = "7" x ="0" y = "2311" w = "148" h = "150" frameNumber = "15" margin = "1" />
+			</UP_LEFT>
+
+			<loop value = "1" />
+
+		</BASIC_ATTACK>
+
+	</BARBARIAN>
+
+	<PALADIN>
+
+		<name value = "3" /> <!-- Paladin -->
+
+		<IDLE> <!-- Idle -->
+				<name value = "0"  />
+			<UP> <!-- Up 0-->
+				<values name = "0" x ="57" y = "653" w = "46" h = "108" frameNumber = "16" margin = "" />
+			</UP>
+
+			<UP_RIGHT> <!-- UP_RIGHT 1-->
+				<values name = "1" x ="57" y = "750" w = "46" h = "108" frameNumber = "16" margin = "" />
+			</UP_RIGHT>
+
+			<RIGHT> <!-- RIGHT 2-->
+				<values name = "2" x ="57" y = "847" w = "46" h = "108" frameNumber = "16" margin = "" />
+			</RIGHT>
+
+			<DOWN_RIGHT> <!-- DOWN_RIGHT 3-->
+				<values name = "3" x ="57" y = "948" w = "46" h = "108" frameNumber = "16" margin = "" />
+			</DOWN_RIGHT>
+
+			<DOWN> <!-- DOWN 4-->
+				<values name = "4" x ="57" y = "242" w = "46" h = "108" frameNumber = "16" margin = "" />
+			</DOWN>
+
+			<DOWN_LEFT> <!-- DOWN_LEFT 5-->
+				<values name = "5" x ="57" y = "347" w = "46" h = "108" frameNumber = "16" margin = "" />
+			</DOWN_LEFT>
+
+			<LEFT> <!-- LEFT 6-->
+				<values name = "6" x ="57" y = "454" w = "46" h = "108" frameNumber = "16" margin = "" />
+			</LEFT>
+
+			<UP_LEFT> <!-- UP_LEFT 7-->
+				<values name = "7" x ="57" y = "556" w = "46" h = "108" frameNumber = "16" margin = "" />
+			</UP_LEFT>
+			
+			<loop value = "1" />
+
+		</IDLE>
+
+		<WALK> <!-- Walk 1-->
+
+			<name value = "1"  />
+			<UP> <!-- Up 0-->
+				<values name = "0" x ="57" y = "1467" w = "84" h = "108" frameNumber = "10" margin = "" />
+			</UP>
+
+			<UP_RIGHT> <!-- UP_RIGHT 1-->
+				<values name = "1" x ="57" y = "1575" w = "84" h = "108" frameNumber = "10" margin = "" />
+			</UP_RIGHT>
+
+			<RIGHT> <!-- RIGHT 2-->
+				<values name = "2" x ="57" y = "1677" w = "84" h = "108" frameNumber = "10" margin = "" />
+			</RIGHT>
+
+			<DOWN_RIGHT> <!-- DOWN_RIGHT 3-->
+				<values name = "3" x ="57" y = "1778" w = "84" h = "108" frameNumber = "10" margin = "" />
+			</DOWN_RIGHT>
+
+			<DOWN> <!-- DOWN 4-->
+				<values name = "4" x ="57" y = "1046" w = "84" h = "108" frameNumber = "10" margin = "" />
+			</DOWN>
+
+			<DOWN_LEFT> <!-- DOWN_LEFT 5-->
+				<values name = "5" x ="57" y = "1148" w = "84" h = "108" frameNumber = "10" margin = "" />
+			</DOWN_LEFT>
+
+			<LEFT> <!-- LEFT 6-->
+				<values name = "6" x ="57" y = "1252" w = "84" h = "108" frameNumber = "10" margin = "" />
+			</LEFT>
+
+			<UP_LEFT> <!-- UP_LEFT 7-->
+				<values name = "7" x ="57" y = "1353" w = "84" h = "108" frameNumber = "10" margin = "" />
+			</UP_LEFT>
+
+			<loop value = "1" />
+
+		</WALK>
+
+		<BASIC_ATTACK> <!-- Basic attack 2-->
+
+			<name value = "2"  />
+			<UP> <!-- Up 0-->
+				<values name = "0" x ="50" y = "2427" w = "68" h = "150" frameNumber = "15" margin = "1" />
+			</UP>
+
+			<UP_RIGHT> <!-- UP_RIGHT 1-->
+				<values name = "1" x ="53" y = "2567" w = "86" h = "150" frameNumber = "15" margin = "" />
+			</UP_RIGHT>
+
+			<RIGHT> <!-- RIGHT 2-->
+				<values name = "2" x ="48" y = "2707" w = "97" h = "130" frameNumber = "15" margin = "1" />
+			</RIGHT>
+
+			<DOWN_RIGHT> <!-- DOWN_RIGHT 3-->
+				<values name = "3" x ="48" y = "2824" w = "93" h = "150" frameNumber = "15" margin = "1" />
+			</DOWN_RIGHT>
+
+			<DOWN> <!-- DOWN 4-->
+				<values name = "4" x ="26" y = "1875" w = "77" h = "150" frameNumber = "15" margin = "1" />
+			</DOWN>
+
+			<DOWN_LEFT> <!-- DOWN_LEFT 5-->
+				<values name = "5" x ="18" y = "2021" w = "88" h = "150" frameNumber = "15" margin = "1" />
+			</DOWN_LEFT>
+
+			<LEFT> <!-- LEFT 6-->
+				<values name = "6" x ="8" y = "2161" w = "101" h = "150" frameNumber = "15" margin = "1" />
+			</LEFT>
+
+			<UP_LEFT> <!-- UP_LEFT 7-->
+				<values name = "7" x ="21" y = "2293" w = "84" h = "150" frameNumber = "15" margin = "1" />
+			</UP_LEFT>
+
+			<loop value = "1" />
+
+		</BASIC_ATTACK>	
+
+	</PALADIN>
+
+</animations>
+
+

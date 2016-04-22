@@ -1,0 +1,40 @@
+<!-- Config file for the game -->
+
+<config>
+  <app>
+    <title>The Rise of Diablo2</title>
+    <organization>Morpheus Games</organization>
+  </app>
+	
+  <renderer>
+    <vsync value="true"/>
+  </renderer>
+
+  <fonts>
+    <default_font file="fonts/open_sans/OpenSans-Regular.ttf" size="24"/>
+  </fonts>
+
+  <uiManager>
+    <atlas file="gui/atlas.png"/>
+    <UIBase file="gui/UIBase.png"/>
+    <stamina file="gui/Stamina_Bar.png"/>
+    <uiAtlas file="gui/UI_atlas.png"/>
+  </uiManager>
+  
+  <window>
+    <resolution width="800" height="600" scale="1"/>
+    <fullscreen value="false"/>
+    <borderless value="false"/>
+    <resizable value="false"/>
+    <fullscreen_window value="false"/>
+  </window>
+
+  <file_system>
+    <path>data.zip</path>
+  </file_system>
+
+  <map>
+    <folder>maps/</folder>
+  </map>
+
+</config>
