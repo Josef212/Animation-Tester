@@ -1,0 +1,42 @@
+<!-- Animations -->
+<animations>
+
+	<UP> <!-- Up 0-->
+		<values name = "0" x ="53" y = "481" w = "72" h = "104" frameNumber = "8" margin = "" />
+	</UP>
+
+	<UP_RIGHT> <!-- UP_RIGHT 1-->
+		<values name = "1" x ="53" y = "598" w = "72" h = "104" frameNumber = "8" margin = "" />
+	</UP_RIGHT>
+
+	<RIGHT> <!-- RIGHT 2-->
+		<values name = "2" x ="53" y = "717" w = "72" h = "104" frameNumber = "8" margin = "" />
+	</RIGHT>
+
+	<DOWN_RIGHT> <!-- DOWN_RIGHT 3-->
+		<values name = "3" x ="53" y = "831" w = "72" h = "104" frameNumber = "8" margin = "" />
+	</DOWN_RIGHT>
+
+	<DOWN> <!-- DOWN 4-->
+		<values name = "4" x ="53 px" y = "17 px" w = "72 px" h = "104" frameNumber = "8" margin = "" />
+	</DOWN>
+
+	<DOWN_LEFT> <!-- DOWN_LEFT 5-->
+		<values name = "5" x ="53" y = "134" w = "72" h = "104" frameNumber = "8" margin = "" />
+	</DOWN_LEFT>
+
+	<LEFT> <!-- LEFT 6-->
+		<values name = "6" x ="53" y = "255" w = "72" h = "104" frameNumber = "8" margin = "" />
+	</LEFT>
+
+	<UP_LEFT> <!-- UP_LEFT 7-->
+		<values name = "7" x ="53" y = "370" w = "72" h = "104" frameNumber = "8" margin = "" />
+	</UP_LEFT>
+			
+	<loop value = "1" />
+
+	<speed value = "0.15" />
+
+</animations>
+
+
