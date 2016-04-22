@@ -39,6 +39,11 @@
 
   <test_scene>
     <entity_texture value = "barbarian.png" />
+    <map_name value = "map_act1.tmx" />
   </test_scene>
+
+  <entity_manager>
+    <animation_file value = "animations.xml" />
+  </entity_manager>
 
 </config>

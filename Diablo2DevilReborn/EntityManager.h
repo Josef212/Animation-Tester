@@ -54,6 +54,8 @@ private:
 	void sortEntities();
 
 	bool loadAnimations();
+
+	std::string animationName;
 };
 
 #endif

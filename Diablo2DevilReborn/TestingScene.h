@@ -27,6 +27,7 @@ public:
 
 private:
 	std::string entityTextureName;
+	std::string mapName;
 	Entity* entity = NULL;
 };
 

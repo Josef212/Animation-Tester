@@ -23,7 +23,9 @@ bool TestingScene::awake(pugi::xml_node& config)
 	bool ret = true;
 
 	entityTextureName.assign("texture/");
-	entityTextureName.append(config.first_child().first_attribute().as_string());
+	entityTextureName.append(config.child("entity_texture").first_attribute().as_string());
+
+	mapName.assign(config.child("map_name").first_attribute().as_string());
 
 	return ret;
 }
@@ -32,8 +34,9 @@ bool TestingScene::start()
 {
 	bool ret = true;
 
-	app->map->load("map_act1.tmx");
+	app->map->load(mapName.c_str());
 
+	entity = app->eManager->createEntity({ 500, 1650 }, entityTextureName.c_str());
 
 	return ret;
 }

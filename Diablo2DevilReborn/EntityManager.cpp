@@ -12,7 +12,7 @@
 EntityManager::EntityManager() : Module()
 {
 	LOG("EntityManager: Creating.");
-	name.assign("EntityManager");
+	name.assign("entity_manager");
 }
 
 EntityManager::~EntityManager()
@@ -26,6 +26,9 @@ bool EntityManager::awake(pugi::xml_node& config)
 {
 	LOG("EntityManager: Awake.");
 	bool ret = true;
+
+	animationName.assign("animation/");
+	animationName.append(config.first_child().first_attribute().as_string());
 
 	return ret;
 }
@@ -112,7 +115,7 @@ bool EntityManager::loadAnimations()
 	pugi::xml_document	anim_file;
 	pugi::xml_node		anim;
 	char* buff;
-	int size = app->fs->load("animations.xml", &buff);
+	int size = app->fs->load(animationName.c_str(), &buff);
 	pugi::xml_parse_result result = anim_file.load_buffer(buff, size);
 	RELEASE(buff);
 
