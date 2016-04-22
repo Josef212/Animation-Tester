@@ -62,16 +62,16 @@ bool Entity::entityUpdate(float internDT)
 			direction = UP_LEFT;
 
 		if (app->input->getKey(SDL_SCANCODE_UP) == KEY_REPEAT)
-			position.y -= 100 * internDT;
+			position.y -= 150 * internDT;
 
 		if (app->input->getKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
-			position.y += 100 * internDT;
+			position.y += 200 * internDT;
 
 		if (app->input->getKey(SDL_SCANCODE_RIGHT) == KEY_REPEAT)
-			position.x += 100 * internDT;
+			position.x += 200 * internDT;
 
 		if (app->input->getKey(SDL_SCANCODE_LEFT) == KEY_REPEAT)
-			position.x -= 100 * internDT;
+			position.x -= 150 * internDT;
 		
 
 	return true;
