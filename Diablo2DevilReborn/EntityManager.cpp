@@ -19,7 +19,6 @@ EntityManager::~EntityManager()
 {
 	LOG("EntityManager: Destroying.");
 	activeEntities.clear();
-	inactiveEntities.clear();
 }
 
 bool EntityManager::awake(pugi::xml_node& config)
@@ -99,11 +98,7 @@ bool EntityManager::cleanUp()
 	for (; tmp != activeEntities.end(); ++tmp)
 		RELEASE(tmp->second);
 
-	for (tmp = inactiveEntities.begin(); tmp != inactiveEntities.end(); ++tmp)
-		RELEASE(tmp->second);
-
 	activeEntities.clear();
-	inactiveEntities.clear();
 
 	return ret;
 }
@@ -159,21 +154,6 @@ bool EntityManager::loadAnimations()
 	return ret;
 }
 
-bool EntityManager::remove(uint id)
-{
-	bool ret = true;
-
-	if (activeEntities.erase(id) > 0)
-	{
-		Entity* tmp = getEntity(id);
-		inactiveEntities.insert(std::pair<uint, Entity*>(id, tmp));
-	}
-	else
-		ret = false;
-
-	return ret;
-}
-
 Entity* EntityManager::getEntity(uint id)
 {
 	Entity* ret = NULL;
@@ -183,11 +163,6 @@ Entity* EntityManager::getEntity(uint id)
 	return (tmp != activeEntities.end() ? tmp->second : NULL);
 
 	return ret;
-}
-
-void EntityManager::sortEntities()
-{
-
 }
 
 Entity* EntityManager::createEntity(iPoint pos, const char* textureName)

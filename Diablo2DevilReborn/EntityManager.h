@@ -37,7 +37,6 @@ public:
 	std::map<entityDirection, Animation>* getAnim();
 
 	std::map<uint, Entity*>		activeEntities;
-	std::map<uint, Entity*>		inactiveEntities;
 
 private:
 
@@ -51,7 +50,6 @@ private:
 	std::map<entityDirection, Animation> animations;
 
 private:
-	void sortEntities();
 
 	bool loadAnimations();
 
