@@ -12,16 +12,10 @@
 #include "Render.h"
 #include "Textures.h"
 #include "Console.h"
-#include "Audio.h"
 #include "Map.h"
 #include "EntityManager.h"
-#include "Fonts.h"
-#include "UIManager.h"
-#include "FadeToBlack.h"
-#include "Attributes.h"
 
 #include "TestingScene.h"
-#include "MenuScene.h"
 
 // Constructor
 App::App(int argc, char* args[]) : argc(argc), args(args)
@@ -35,12 +29,7 @@ App::App(int argc, char* args[]) : argc(argc), args(args)
 	map = new Map();
 	textures = new Textures();
 	
-	audio = new Audio();
 	eManager = new EntityManager();
-	fonts = new Fonts();
-	uiManager = new UIManager();
-
-	fade = new FadeToBlack();
 	console = new Console();
 
 	tS = new TestingScene();
@@ -50,14 +39,10 @@ App::App(int argc, char* args[]) : argc(argc), args(args)
 	addModule(input);
 	addModule(map);
 	addModule(textures);	
-	addModule(audio);	
-	addModule(fonts);
 		
-	addModule(uiManager);
 	addModule(tS);
 	
 	addModule(eManager);
-	addModule(fade);
 
 	addModule(console);	
 

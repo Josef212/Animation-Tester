@@ -11,26 +11,7 @@
 enum entityType
 {
 	UNKNOWN,
-	PLAYER,
-	PALADIN,
 	DUMMY
-};
-
-enum entityState
-{
-	IDLE = 0,
-	WALK = 1,
-	BASIC_ATTACK = 2,
-	WAIT_TO_ATTACK,
-	INACTIVE
-};
-
-enum entityInputState
-{
-	I_MOVE = 0,
-	I_STOP_MOVE = 1,
-	I_ATTACK = 2,
-	I_NULL = 3,
 };
 
 enum entityDirection
@@ -54,23 +35,7 @@ public:
 
 	virtual void setPosition(uint x, uint y);
 
-	virtual void setTilePosition(uint x, uint y);
-
-	virtual void setCollider(const SDL_Rect& col);
-
-	virtual void setCollider(SDL_Rect& col);
-
-	virtual void setSection(SDL_Rect& sect);
-
-	virtual SDL_Rect getSection()const;
-
-	virtual SDL_Rect getCollider()const;
-
 	virtual uint getId()const;
-
-	virtual iPoint getPosition();
-
-	virtual iPoint getTilePos();
 
 	virtual void draw();
 
@@ -78,41 +43,19 @@ public:
 
 	virtual bool entityPostUpdate();
 
-	//MOVEMENT
-	iPoint		finalPos;
-	fPoint		velocity;
-	bool		movement = false;
-	float		finalPosRadius = 2.5f;
-
-	entityInputState current_input = I_NULL;
-
-	void setInitVelocity();
-	void setDirection();
-	void move(float internDT);
-	bool isTargetReached();
-	void updateVelocity(float internDT);
-
 private:
 
 	//uchar behavoiur;
 
 public:
 	uint id;
-	SDL_Rect section;
-	SDL_Rect collider;
 	iPoint position;
-	iPoint tilePos;
-
-	iPoint speed;
 	entityType type;
-	SDL_Texture* imageTexture = NULL;
 	Sprite imageSprite;
 
-	entityState state = IDLE;
-	entityDirection direction;
+	std::map<entityDirection, Animation>* animations;
 
-	bool mustDie = false;
-
+	entityDirection direction = DOWN;
 };
 
 #endif

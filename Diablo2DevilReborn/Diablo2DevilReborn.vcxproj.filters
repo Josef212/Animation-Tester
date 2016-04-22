@@ -40,40 +40,13 @@
     <ClCompile Include="Console.cpp">
       <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
     </ClCompile>
-    <ClCompile Include="Audio.cpp">
-      <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
-    </ClCompile>
     <ClCompile Include="EntityManager.cpp">
       <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
     </ClCompile>
     <ClCompile Include="Entity.cpp">
       <Filter>Desenvolupament  ========\Entities</Filter>
     </ClCompile>
-    <ClCompile Include="FadeToBlack.cpp">
-      <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
-    </ClCompile>
     <ClCompile Include="TestingScene.cpp">
-      <Filter>Desenvolupament  ========\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="UIElement.cpp">
-      <Filter>Desenvolupament  ========\UI</Filter>
-    </ClCompile>
-    <ClCompile Include="Fonts.cpp">
-      <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Desenvolupament  ========\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="Paladin.cpp">
-      <Filter>Desenvolupament  ========\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="Attributes.cpp">
-      <Filter>Desenvolupament  ========\Modules\Definitions</Filter>
-    </ClCompile>
-    <ClCompile Include="UIManager.cpp">
-      <Filter>Desenvolupament  ========\UI</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuScene.cpp">
       <Filter>Desenvolupament  ========\Scenes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -129,44 +102,17 @@
     <ClInclude Include="Console.h">
       <Filter>Desenvolupament  ========\Modules\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Audio.h">
-      <Filter>Desenvolupament  ========\Modules\Headers</Filter>
-    </ClInclude>
     <ClInclude Include="EntityManager.h">
       <Filter>Desenvolupament  ========\Modules\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Desenvolupament  ========\Entities</Filter>
     </ClInclude>
-    <ClInclude Include="FadeToBlack.h">
-      <Filter>Desenvolupament  ========\Modules\Headers</Filter>
-    </ClInclude>
     <ClInclude Include="TestingScene.h">
       <Filter>Desenvolupament  ========\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="Animation.h">
       <Filter>Desenvolupament  ========\Modules\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="UIElement.h">
-      <Filter>Desenvolupament  ========\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="Fonts.h">
-      <Filter>Desenvolupament  ========\Modules\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Attributes.h">
-      <Filter>Desenvolupament  ========\Modules\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Desenvolupament  ========\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="Paladin.h">
-      <Filter>Desenvolupament  ========\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="UIManager.h">
-      <Filter>Desenvolupament  ========\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuScene.h">
-      <Filter>Desenvolupament  ========\Scenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -196,9 +142,6 @@
     </Filter>
     <Filter Include="Desenvolupament  ========\Entities">
       <UniqueIdentifier>{f239074e-8be2-4b6d-85ed-d6251bfbb217}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Desenvolupament  ========\UI">
-      <UniqueIdentifier>{2cdb9c71-e426-4745-8626-e82fb0554e3c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

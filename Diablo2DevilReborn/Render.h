@@ -42,7 +42,7 @@ public:
 	bool drawLine(int x1, int y1, int x2, int y2, Uint8 r, Uint8 g, Uint8 b, Uint8 a = 255, bool use_camera = true) const;
 	bool drawCircle(int x1, int y1, int radius, Uint8 r, Uint8 g, Uint8 b, Uint8 a = 255, bool use_camera = true) const;
 
-	bool blit(Sprite* s, bool isUI = false);
+	bool blit(Sprite* s);
 
 	// Set background color
 	void setBackgroundColor(SDL_Color color);
@@ -58,7 +58,6 @@ public:
 	SDL_Color		background;
 
 	std::list<Sprite*>	sprites;
-	std::list<Sprite*>  uiSprites;
 
 private:
 	bool isInsideRenderZone(int x, int y)const;

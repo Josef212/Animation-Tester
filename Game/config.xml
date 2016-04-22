@@ -37,4 +37,8 @@
     <folder>maps/</folder>
   </map>
 
+  <test_scene>
+    <entity_texture value = "barbarian.png" />
+  </test_scene>
+
 </config>

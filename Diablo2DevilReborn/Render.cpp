@@ -3,7 +3,6 @@
 #include "App.h"
 #include "Window.h"
 #include "Render.h"
-#include "Player.h"
 #include "Textures.h"
 
 #define RENDER_MARGIN 150
@@ -101,25 +100,6 @@ bool Render::postUpdate()
 
 		++tmp;
 	}
-
-	tmp = uiSprites.begin();
-
-	while (tmp != uiSprites.end())
-	{
-		int pX, pY = 0;
-		if ((*tmp)->pivotOffsetX < INT_MAX)
-			pX = (*tmp)->pivotOffsetX;
-		if ((*tmp)->pivotOffsetY < INT_MAX)
-			pY = (*tmp)->pivotOffsetY;
-
-		//if (isInsideRenderZone((*tmp)->x, (*tmp)->y))
-			blit((*tmp)->texture, (*tmp)->x - app->render->camera.x, (*tmp)->y - app->render->camera.y, &(*tmp)->section, 1.0f, (*tmp)->angle, pX, pY);
-
-		++tmp;
-	}
-
-
-
 
 	SDL_SetRenderDrawColor(renderer, background.r, background.g, background.g, background.a);
 	SDL_RenderPresent(renderer);
@@ -303,17 +283,13 @@ bool Render::drawCircle(int x, int y, int radius, Uint8 r, Uint8 g, Uint8 b, Uin
 	return ret;
 }
 
-bool Render::blit(Sprite* s, bool isUI)
+bool Render::blit(Sprite* s)
 {
 	bool ret = true;
 
-	if (s != NULL && s->texture != NULL && !isUI)
+	if (s != NULL && s->texture != NULL)
 	{
 		sprites.push_back(s);
-	}
-	else if (isUI)
-	{
-		uiSprites.push_back(s);
 	}
 	else
 	{

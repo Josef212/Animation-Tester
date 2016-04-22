@@ -75,14 +75,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Attributes.cpp" />
-    <ClCompile Include="Audio.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityManager.cpp" />
-    <ClCompile Include="FadeToBlack.cpp" />
     <ClCompile Include="FileSystem.cpp" />
-    <ClCompile Include="Fonts.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="App.cpp" />
@@ -90,27 +86,18 @@
     <ClCompile Include="j1Timer.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="p2Log.cpp" />
-    <ClCompile Include="Paladin.cpp" />
-    <ClCompile Include="Player.cpp" />
     <ClCompile Include="PugiXml\src\pugixml.cpp" />
     <ClCompile Include="Render.cpp" />
     <ClCompile Include="TestingScene.cpp" />
-    <ClCompile Include="MenuScene.cpp" />
     <ClCompile Include="Textures.cpp" />
-    <ClCompile Include="UIElement.cpp" />
-    <ClCompile Include="UIManager.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
-    <ClInclude Include="Attributes.h" />
-    <ClInclude Include="Audio.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityManager.h" />
-    <ClInclude Include="FadeToBlack.h" />
     <ClInclude Include="FileSystem.h" />
-    <ClInclude Include="Fonts.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="j1PerfTimer.h" />
     <ClInclude Include="j1Timer.h" />
@@ -121,16 +108,11 @@
     <ClInclude Include="p2List.h" />
     <ClInclude Include="Module.h" />
     <ClInclude Include="p2Point.h" />
-    <ClInclude Include="Paladin.h" />
-    <ClInclude Include="Player.h" />
     <ClInclude Include="PugiXml\src\pugiconfig.hpp" />
     <ClInclude Include="PugiXml\src\pugixml.hpp" />
     <ClInclude Include="Render.h" />
     <ClInclude Include="TestingScene.h" />
-    <ClInclude Include="MenuScene.h" />
     <ClInclude Include="Textures.h" />
-    <ClInclude Include="UIElement.h" />
-    <ClInclude Include="UIManager.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -12,15 +12,9 @@ class Input;
 class Render;
 class Textures;
 class Console;
-class Audio;
 class EntityManager;
 class Map;
-class Fonts;
-class UIManager;
-class FadeToBlack;
 class TestingScene;
-class MenuScene;
-
 class App
 {
 public:
@@ -90,14 +84,9 @@ public:
 	Render* render = NULL;
 	Textures* textures = NULL;
 	Console* console = NULL;
-	Audio* audio = NULL;
 	EntityManager* eManager = NULL;
 	Map* map = NULL;
-	Fonts* fonts = NULL;
-	UIManager* uiManager = NULL;
-	FadeToBlack* fade = NULL;
 	TestingScene* tS = NULL;
-	MenuScene* menuscene = NULL;
 
 	bool debug = false;
 

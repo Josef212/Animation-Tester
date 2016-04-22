@@ -2,7 +2,8 @@
 #define __TESTINGSCENE_H__
 
 #include "Module.h"
-#include "Player.h"
+
+class Entity;
 
 class TestingScene :
 	public Module
@@ -25,20 +26,8 @@ public:
 	bool cleanUp();
 
 private:
-	UIElement* atlas = NULL;
-	UIElement* staminaBar = NULL;
-	UIElement* UIBase = NULL;
-
-	/*UIElement* welcomeM;
-	UIElement* rigthClickToMove;
-	UIElement* rigthClickToAttack;
-	UIElement* leftClickToUseHability;
-
-	SDL_Texture* menu = NULL;
-	bool blitMenu = true;
-	bool moved = false;*/
-
-	Player* player;
+	std::string entityTextureName;
+	Entity* entity = NULL;
 };
 
 #endif
