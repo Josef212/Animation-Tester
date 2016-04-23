@@ -2,35 +2,35 @@
 <animations>
 
 	<UP> <!-- Up 0-->
-		<values name = "0" x ="53" y = "481" w = "72" h = "104" frameNumber = "8" margin = "" />
+		<values name = "0" x ="53" y = "481" w = "72" h = "104" frameNumber = "8" margin = "" pivot_x = "27" pivot_y = "96"/>
 	</UP>
 
 	<UP_RIGHT> <!-- UP_RIGHT 1-->
-		<values name = "1" x ="53" y = "598" w = "72" h = "104" frameNumber = "8" margin = "" />
+		<values name = "1" x ="53" y = "598" w = "72" h = "104" frameNumber = "8" margin = "" pivot_x = "22" pivot_y = "96"/>
 	</UP_RIGHT>
 
 	<RIGHT> <!-- RIGHT 2-->
-		<values name = "2" x ="53" y = "717" w = "72" h = "104" frameNumber = "8" margin = "" />
+		<values name = "2" x ="53" y = "717" w = "72" h = "104" frameNumber = "8" margin = "" pivot_x = "25" pivot_y = "92"/>
 	</RIGHT>
 
 	<DOWN_RIGHT> <!-- DOWN_RIGHT 3-->
-		<values name = "3" x ="53" y = "831" w = "72" h = "104" frameNumber = "8" margin = "" />
+		<values name = "3" x ="53" y = "831" w = "72" h = "104" frameNumber = "8" margin = "" pivot_x = "28" pivot_y = "92"/>
 	</DOWN_RIGHT>
 
 	<DOWN> <!-- DOWN 4-->
-		<values name = "4" x ="53 px" y = "17 px" w = "72 px" h = "104" frameNumber = "8" margin = "" />
+		<values name = "4" x ="53" y = "17" w = "72" h = "104" frameNumber = "8" margin = "" pivot_x = "41" pivot_y = "90"/>
 	</DOWN>
 
 	<DOWN_LEFT> <!-- DOWN_LEFT 5-->
-		<values name = "5" x ="53" y = "134" w = "72" h = "104" frameNumber = "8" margin = "" />
+		<values name = "5" x ="53" y = "134" w = "72" h = "104" frameNumber = "8" margin = "" pivot_x = "36" pivot_y = "100"/>
 	</DOWN_LEFT>
 
 	<LEFT> <!-- LEFT 6-->
-		<values name = "6" x ="53" y = "255" w = "72" h = "104" frameNumber = "8" margin = "" />
+		<values name = "6" x ="53" y = "255" w = "72" h = "104" frameNumber = "8" margin = "" pivot_x = "33" pivot_y = "95"/>
 	</LEFT>
 
 	<UP_LEFT> <!-- UP_LEFT 7-->
-		<values name = "7" x ="53" y = "370" w = "72" h = "104" frameNumber = "8" margin = "" />
+		<values name = "7" x ="53" y = "370" w = "72" h = "104" frameNumber = "8" margin = "" pivot_x = "36" pivot_y = "97"/>
 	</UP_LEFT>
 			
 	<loop value = "1" />

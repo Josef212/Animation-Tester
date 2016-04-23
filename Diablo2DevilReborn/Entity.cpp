@@ -5,6 +5,8 @@
 #include "Input.h"
 #include "EntityManager.h"
 
+#define PIVOT_SIZE 3
+
 Entity::Entity()
 {
 	animations = app->eManager->getAnim();
@@ -29,10 +31,25 @@ uint Entity::getId()const
 void Entity::draw()
 {
 	SDL_Rect r;
-	r = animations->find(direction)->second.getCurrentFrame();
-	imageSprite.setSection(r);
-	imageSprite.setPosition(position.x, position.y);
-	app->render->blit(&imageSprite);
+	r = currentAnimation->getCurrentFrame();
+	app->render->blit(texture, position.x, position.y, &r);
+}
+
+void Entity::debugDraw()
+{
+	SDL_Rect r = currentAnimation->peekCurrentFrame();
+	r.x = position.x;
+	r.y = position.y;
+
+	app->render->drawQuad(r, 255, 0, 0, 255, false, true);
+
+	SDL_Rect pivot;
+	pivot.x = currentAnimation->pivotX + position.x - 1;
+	pivot.y = currentAnimation->pivotY + position.y - 1;
+	pivot.w = pivot.h = PIVOT_SIZE;
+
+	app->render->drawQuad(pivot, 0, 255, 0, 255, true, true);
+
 }
 
 bool Entity::entityUpdate(float internDT)
@@ -72,16 +89,23 @@ bool Entity::entityUpdate(float internDT)
 
 		if (app->input->getKey(SDL_SCANCODE_LEFT) == KEY_REPEAT)
 			position.x -= 150 * internDT;
-		
+
+		if (app->input->getKey(SDL_SCANCODE_SPACE) == KEY_DOWN)
+			currentAnimation->reset();
 
 	return true;
 }
 
 bool Entity::entityPostUpdate()
 {
+	currentAnimation = &animations->find(direction)->second;
+
 	draw();
 
 	app->render->cameraFollow(position.x, position.y);
+
+	if (app->debug)
+		debugDraw();
 
 	return true;
 }

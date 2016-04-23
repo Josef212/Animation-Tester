@@ -12,6 +12,7 @@ public:
 	float speed;
 	bool loop;
 	std::vector<SDL_Rect> frames;
+	int pivotX, pivotY;
 
 private:
 
@@ -20,10 +21,10 @@ private:
 
 public:
 
-	Animation() : speed(1.0f), currentFrame(0), loop(true), loops(0)
+	Animation() : speed(1.0f), currentFrame(0), loop(true), loops(0), pivotX(0), pivotY(0)
 	{}
 
-	Animation(const Animation& a) : frames(a.frames), speed(a.speed), currentFrame(0), loop(a.loop), loops(0)
+	Animation(const Animation& a) : frames(a.frames), speed(a.speed), currentFrame(0), loop(a.loop), loops(0), pivotX(a.pivotX), pivotY(a.pivotY)
 	{}
 
 	SDL_Rect& getCurrentFrame()

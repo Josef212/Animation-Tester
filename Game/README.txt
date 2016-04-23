@@ -28,10 +28,13 @@ Welcome to Morpheus Game's animation tester for our Diablo's 2 tribute project.
  Inside the tester you can move the entity arround the map using arrow buttons and change the entity's direction in order to check all animations points of view 
 using 1-8 number buttons.
 
+You can press F1 to see the degbug quad that matches with the animation frame (red) and the pivot (green).
+
+Press space bar to reset the animation.
 
 Finally you can exit by pressing ESC.
 
 
-Josef21296 (Josep Casanovas Vidal) Morpheus Games.
+Josef21296 - Morpheus Games.
 www.github.com/Josef212
 www.github.com/MorpheusGames

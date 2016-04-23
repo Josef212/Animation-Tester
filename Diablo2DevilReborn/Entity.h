@@ -39,6 +39,8 @@ public:
 
 	virtual void draw();
 
+	virtual void debugDraw();
+
 	virtual bool entityUpdate(float internDT);
 
 	virtual bool entityPostUpdate();
@@ -46,11 +48,13 @@ public:
 private:
 
 	//uchar behavoiur;
+	Animation* currentAnimation = NULL;
 
 public:
 	uint id;
 	iPoint position;
 	entityType type;
+	SDL_Texture* texture = NULL;
 	Sprite imageSprite;
 
 	std::map<entityDirection, Animation>* animations;

@@ -140,10 +140,14 @@ bool EntityManager::loadAnimations()
 			int fN = dir.first_child().attribute("frameNumber").as_int();
 			int margin = dir.first_child().attribute("margin").as_int();
 			bool loop = anim.child("loop").attribute("value").as_bool();
+			int pivotX = dir.first_child().attribute("pivot_x").as_int();
+			int pivotY = dir.first_child().attribute("pivot_y").as_int();
+			float speed = anim.child("speed").attribute("value").as_float();
 			anims.setAnimation(x, y, w, h, fN, margin);
 			anims.loop = loop;
-			float speed = anim.child("speed").attribute("value").as_float();
 			anims.speed = speed;
+			anims.pivotX = pivotX;
+			anims.pivotY = pivotY;
 
 			animations.insert(std::pair<entityDirection, Animation>(p, anims));
 		}
@@ -172,7 +176,9 @@ Entity* EntityManager::createEntity(iPoint pos, const char* textureName)
 	ret = new Entity();
 
 	ret->setPosition(pos.x, pos.y);
-	ret->imageSprite.texture = app->textures->load(textureName);
+	SDL_Texture* texture = app->textures->load(textureName);
+	ret->texture = texture;
+	ret->imageSprite.texture = texture;
 	ret->type = DUMMY;
 
 	activeEntities.insert(std::pair<uint, Entity*>(nextId, ret));
