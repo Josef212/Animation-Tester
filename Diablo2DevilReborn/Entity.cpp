@@ -32,20 +32,20 @@ void Entity::draw()
 {
 	SDL_Rect r;
 	r = currentAnimation->getCurrentFrame();
-	app->render->blit(texture, position.x, position.y, &r);
+	app->render->blit(texture, position.x - currentAnimation->pivotX, position.y - currentAnimation->pivotY, &r);
 }
 
 void Entity::debugDraw()
 {
 	SDL_Rect r = currentAnimation->peekCurrentFrame();
-	r.x = position.x;
-	r.y = position.y;
+	r.x = position.x - currentAnimation->pivotX;
+	r.y = position.y - currentAnimation->pivotY;
 
 	app->render->drawQuad(r, 255, 0, 0, 255, false, true);
 
 	SDL_Rect pivot;
-	pivot.x = currentAnimation->pivotX + position.x - 1;
-	pivot.y = currentAnimation->pivotY + position.y - 1;
+	pivot.x = position.x - 1;
+	pivot.y = position.y - 1;
 	pivot.w = pivot.h = PIVOT_SIZE;
 
 	app->render->drawQuad(pivot, 0, 255, 0, 255, true, true);
